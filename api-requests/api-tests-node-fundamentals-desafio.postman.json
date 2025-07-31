@@ -1,0 +1,174 @@
+{
+  "info": {
+    "name": "01-DesafioPratico",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Complete Task",
+      "event": [],
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8888/tasks/56bc3b05-587e-4a99-a895-d6b656256fc/complete",
+          "protocol": "http",
+          "host": [
+            "localhost:8888"
+          ],
+          "path": [
+            "tasks",
+            "56bc3b05-587e-4a99-a895-d6b656256fc",
+            "complete"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Title Updated\",\n  \"description\": \"Description Updated\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Create Task",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8888/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost:8888"
+          ],
+          "path": [
+            "tasks"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Title 02\",\n  \"description\": \"Description 02\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Delete Task",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8888/tasks/9601121d-2ca2-406d-9873-99fe65396fa0",
+          "protocol": "http",
+          "host": [
+            "localhost:8888"
+          ],
+          "path": [
+            "tasks",
+            "9601121d-2ca2-406d-9873-99fe65396fa0"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Title 02\",\n  \"description\": \"Description 02\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "List Tasks",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8888/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost:8888"
+          ],
+          "path": [
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "02"
+            }
+          ],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Update Task",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8888/tasks/1013cc09-3284-49e8-bd74-4bdecb972c5e",
+          "protocol": "http",
+          "host": [
+            "localhost:8888"
+          ],
+          "path": [
+            "tasks",
+            "1013cc09-3284-49e8-bd74-4bdecb972c5e"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Title Updated\",\n  \"description\": \"Description Updated\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
