@@ -18,25 +18,12 @@ Ela permite criar, listar, atualizar, deletar e marcar tarefas como concluídas,
    ```sh
    npm run dev
    ```
-
    O servidor estará disponível em `http://localhost:8888`.
 
 2. **Testes de API:**
 
-   Utilize o arquivo `api-tests-node-fundamentals-desafio.postman.json` no Postman para testar os endpoints.
+   Utilize o arquivo `api-requests/api-tests-node-fundamentals-desafio.postman.json` no Postman para testar os endpoints.
 
-
-
-## 📥 Importação de tarefas via CSV
-
-1. Edite o arquivo `tasks.csv` com as tarefas desejadas.
-2. Execute o script para importar:
-
-   ```sh
-   node upload-csv/upload-csv.js
-   ```
-
----
 
 ## 📌 Endpoints
 
@@ -47,6 +34,15 @@ Ela permite criar, listar, atualizar, deletar e marcar tarefas como concluídas,
 | PUT    | `/tasks/:id`          | Atualiza uma tarefa existente                |
 | DELETE | `/tasks/:id`          | Remove uma tarefa                            |
 | PATCH  | `/tasks/:id/complete` | Marca ou desmarca como concluída             |
+
+## 📥 Funcionalidade Extra: Importação de tarefas via CSV
+
+1. Edite o arquivo `tasks.csv` com as tarefas desejadas.
+2. Execute o script para importar:
+
+   ```sh
+   node upload-csv/upload-csv.js
+   ```
 
 
 ## 🗒️ Observações
